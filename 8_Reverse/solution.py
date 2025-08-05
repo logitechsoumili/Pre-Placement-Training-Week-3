@@ -1,0 +1,40 @@
+class Node:
+    def __init__(self, data):
+        self.data = data
+        self.next = None
+
+def reverse(head):
+    prev = None
+    curr = head
+    while curr:
+        next_node = curr.next
+        curr.next = prev
+        prev = curr
+        curr = next_node
+    return prev
+
+
+def build_list():
+    head = None
+    tail = None
+    n = int(input("Enter number of elements: "))
+    for _ in range(n):
+        val = int(input("Enter value: "))
+        new_node = Node(val)
+        if not head:
+            head = tail = new_node
+        else:
+            tail.next = new_node
+            tail = new_node
+    return head
+
+def main():
+    head = build_list()
+
+    head = reverse(head)
+    print("Reversed list:")
+
+    printList(head)
+
+if __name__ == "__main__":
+    main()
