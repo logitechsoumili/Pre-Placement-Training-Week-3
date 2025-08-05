@@ -7,7 +7,6 @@ This repository contains solutions for **Week 3 of Pre-Placement Training** focu
 
 All problems are solved in both **C** and **Python**, and include:
 
-* Problem Statement & Constraints  
 * Solution Code 
 * Problem submission screenshots on **GeeksforGeeks** or **HackerRank**
 
